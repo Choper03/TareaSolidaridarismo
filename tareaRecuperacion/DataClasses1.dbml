@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RECUPERACION" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.ABONOS" Member="ABONOS">
+    <Type Name="ABONOS">
+      <Column Name="CODIGO_MONTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CODIGO_CREDITO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABONO" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="FECHA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CLIENTES" Member="CLIENTES">
+    <Type Name="CLIENTES">
+      <Column Name="CODIGO_CLIENTE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NOMBRE1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NOMBRE2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="APELLIDO1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="APELLIDO2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DPI" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NIT" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="DIRECCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TELEFONO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SALARIO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CREDITOS" Member="CREDITOS">
+    <Type Name="CREDITOS">
+      <Column Name="CODIGO_CREDITO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CODIGO_CLIENTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MONTO" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FECHA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
